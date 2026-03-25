@@ -1,0 +1,383 @@
+import React from "react";
+import { SocialIcon } from "../components/SocialIcon";
+import { SectionTitle } from "../components/SectionTitle";
+import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
+import { WorldReachMap } from "../components/WorldReachMap";
+
+// Assets
+import imgEllipse1 from "../../assets/imgEllipse1.png";
+import imgEllipse2 from "../../assets/imgEllipse2.png";
+import imgRice from "../../assets/rice.png";
+import imgClient1 from "../../assets/testimonial-1.png";
+import imgClient2 from "../../assets/testimonial-2.png";
+import imgClient3 from "../../assets/testimonial-3.png";
+import bannerVideo from "../../assets/video/banner.mp4";
+import svgPaths from "../../imports/svg-pj4gezvnd5";
+
+export default function Home() {
+  return (
+    <div className="bg-[#F6F6F6] min-h-screen font-['Roboto',sans-serif] overflow-x-hidden">
+      {/* NAVBAR */}
+      <Navbar />
+
+      {/* HERO SECTION */}
+      <section className="px-4 md:px-8 mb-20">
+        <div className="relative w-full rounded-[30px] overflow-hidden max-w-[1400px] mx-auto min-h-[600px] md:min-h-[700px] flex items-center shadow-xl">
+          <video
+            src={bannerVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/30"></div>
+
+          <div className="relative z-10 px-4  pt-5 md:pt-0 md:px-20 max-w-5xl">
+            <h1 className="text-3xl md:text-6xl lg:text-6xl font-medium text-white mb-6 leading-[1.1]">
+              PREMIUM INDIAN EXPORTS
+              <br />
+              FOR DUBAI AND THE GCC
+            </h1>
+            <p className="text-lg md:text-xl text-white/95 mb-10 max-w-3xl leading-relaxed font-light">
+              Grow Xports brings high-quality Indian rice, grains, and spices to
+              international markets with a strong focus on Dubai. Under our
+              brand Soil & Soul, we are committed to delivering purity,
+              consistency, and value at the right price.
+            </p>
+            <div className="flex flex-wrap gap-4 items-center mb-16">
+              <button className="bg-[#0F1B45] text-white px-10 py-4 rounded-[30px] font-medium text-xl hover:bg-opacity-90 transition-colors shadow-lg">
+                Explore Products
+              </button>
+              <button className="bg-[#C8AD82] text-white px-10 py-4 rounded-[30px] font-medium text-xl hover:bg-opacity-90 transition-colors shadow-lg">
+                Contact Us
+              </button>
+            </div>
+          </div>
+          <div className="hidden md:flex gap-4 absolute bottom-10 right-6">
+            <SocialIcon type="twitter" variant="light" />
+            <SocialIcon type="instagram" variant="light" />
+            <SocialIcon type="facebook" variant="light" />
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE GROW XPORTS */}
+      <section className="max-w-[1200px] mx-auto px-6 mb-24">
+        <SectionTitle title="Why Choose Grow Xports" />
+        <p className="text-lg md:text-xl text-[#0F1B45] font-light max-w-5xl mb-16 leading-relaxed">
+          Grow Xports is an Indian export company focused exclusively on
+          agricultural products for overseas markets. We currently export rice,
+          grains, and spices, with a clear goal to build a trusted distribution
+          presence in Dubai and expand across the GCC.
+          <br />
+          <br />
+          Our approach is simple: source quality products, maintain reliable
+          standards, and supply them at affordable prices without compromising
+          integrity. Every shipment is planned with care so buyers receive
+          products they can trust.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-16">
+          <FeatureItem
+            title="Quality-First Sourcing"
+            desc="We select our products with strict attention to quality, consistency, freshness, and market suitability."
+          />
+          <FeatureItem
+            title="Affordable Pricing"
+            desc="Our mission is to make premium Indian products available at fair and practical prices."
+          />
+          <FeatureItem
+            title="Focused Product Range"
+            desc="By specializing only in rice, grains, and spices, we give full attention to the categories we know best."
+          />
+          <FeatureItem
+            title="Dubai Market Vision"
+            desc="Grow Xports works with international buyers across multiple regions, ensuring reliable trade relationships and professional export services."
+          />
+          <FeatureItem
+            title="Trusted Brand Promise"
+            desc="We manage the complete export process including documentation, packaging, and shipping to ensure smooth and timely delivery."
+          />
+          <FeatureItem
+            title="Long-Term Partnerships"
+            desc="We prioritize clear communication, transparency, and long-term partnerships with our customers around the world."
+          />
+        </div>
+      </section>
+
+      {/* PRODUCTS WE EXPORT */}
+      <section className="max-w-[1200px] mx-auto px-6 mb-24">
+        <SectionTitle title="Products We Export" />
+        <p className="text-lg md:text-xl text-[#0F1B45] max-w-4xl mb-12">
+          Grow Xports supplies carefully selected agricultural products under
+          the Soil & Soul brand. We focus on products that reflect India's
+          natural richness, export potential, and everyday market demand.
+        </p>
+
+        <div className="relative w-full flex justify-center">
+          {/* Card Background */}
+          <div className="w-full max-w-[1200px] relative">
+            {/* Giant watermark */}
+            <div className="absolute top-8 left-[35%] text-[#C8AD82] text-7xl md:text-[100px] font-semibold opacity-30 z-0 select-none">
+              02
+            </div>
+
+            <div className="relative z-10 bg-white rounded-[30px] p-4 md:p-8 flex flex-col md:flex-row items-center gap-10 shadow-sm border border-gray-100">
+              <div className="w-full md:w-1/2">
+                <img
+                  src={imgRice}
+                  alt="Rice and Grains"
+                  className="w-full rounded-[20px] object-cover h-[300px] md:h-[400px]"
+                />
+              </div>
+              <div className="w-full md:w-1/2 md:pr-10 py-6">
+                <h3 className="text-3xl font-medium text-[#0F1B45] mb-6">
+                  Rice and Grains
+                </h3>
+                <p className="text-gray-600 text-lg font-light leading-relaxed mb-8">
+                  Our rice products are a staple in markets across the Middle
+                  East. We provide selected varieties of Basmati and Non-Basmati
+                  rice, known for their quality, consistency, and proper
+                  processing.
+                </p>
+                <button className="bg-[#C8AD82] text-white px-8 py-3 rounded-[30px] font-medium text-lg hover:bg-opacity-90 transition-transform hover:scale-105 inline-block">
+                  View more
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MISSION & VISION */}
+      <section className="max-w-[1200px] mx-auto px-6 mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="bg-[#E6E6E6] rounded-[30px] p-10 pt-16 relative">
+            <div className="absolute -top-8 left-10 w-16 h-16 rounded-full overflow-hidden shadow-md">
+              <img
+                src={imgEllipse1}
+                alt="Mission"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-3xl font-medium text-[#0F1B45] mb-4">
+              Our Mission
+            </h3>
+            <p className="text-xl text-[#0F1B45] font-light leading-relaxed">
+              To deliver the best quality Indian products to Dubai at the best
+              affordable price, while building a business rooted in fairness and
+              trust.
+            </p>
+          </div>
+          <div className="bg-[#E6E6E6] rounded-[30px] p-10 pt-16 relative">
+            <div className="absolute -top-8 left-10 w-16 h-16 rounded-full overflow-hidden shadow-md">
+              <img
+                src={imgEllipse2}
+                alt="Vision"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-3xl font-medium text-[#0F1B45] mb-4">
+              Our Vision
+            </h3>
+            <p className="text-xl text-[#0F1B45] font-light leading-relaxed">
+              To establish a strong distribution network in Dubai and expand
+              from there to the wider GCC market.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* EXPORT PROCESS */}
+      <section className="bg-[#0F1B45] py-24 px-6 text-white mb-24 overflow-hidden">
+        <div className="max-w-[1200px] mx-auto">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-[50px] h-[50px] flex items-center justify-center">
+              <div className="w-8 h-8 rotate-45 border-4 border-[#C8AD82]"></div>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-medium">
+              Our Export Process
+            </h2>
+          </div>
+          <p className="text-lg text-white/80 font-light max-w-3xl mb-24 leading-relaxed">
+            We follow a structured export process to ensure product quality,
+            compliance, and timely delivery to international markets.
+          </p>
+
+          <div className="relative mt-12 lg:h-[350px] flex flex-col lg:block gap-6">
+            {/* Horizontal Line */}
+            <div className="absolute top-1/2 left-0 w-full h-[1px] bg-[#C8AD82] hidden lg:block -translate-y-1/2"></div>
+
+            {/* Process Steps */}
+            <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-4 relative z-10 lg:h-full">
+              <ProcessStep
+                title="Global Sourcing"
+                desc="We source premium agricultural products from verified farms and processing partners."
+                position="bottom"
+              />
+              <ProcessStep
+                title="Quality Inspection"
+                desc="Our products pass strict quality checks to meet international standards."
+                position="top"
+              />
+              <ProcessStep
+                title="Packaging & Documentation"
+                desc="We use secure packaging and handle all necessary export documentation."
+                position="bottom"
+              />
+              <ProcessStep
+                title="International Shipping"
+                desc="We coordinate logistics and shipping to ensure safe and timely delivery to your port."
+                position="top"
+              />
+              <ProcessStep
+                title="Global Delivery"
+                desc="We ensure safe handling and delivery through our partners, offering worldwide."
+                position="bottom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* GLOBAL REACH */}
+      <section className="max-w-[1200px] mx-auto px-6 mb-32 relative">
+        <SectionTitle title="Our Global Reach" />
+        <p className="text-lg md:text-xl text-[#0F1B45] font-light max-w-4xl mb-16 leading-relaxed text-center mx-auto">
+          Grow Xports is bridging the gap between Indian farms and the Middle
+          Eastern market, with a primary focus on establishing a strong foothold
+          in the UAE.
+        </p>
+
+        <WorldReachMap />
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-[#0F1B45]">
+          <div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">10+</div>
+            <div className="text-xl">Years Experience</div>
+          </div>
+          <div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">250+</div>
+            <div className="text-xl">Products</div>
+          </div>
+          <div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">
+              10000+
+            </div>
+            <div className="text-xl">Customers</div>
+          </div>
+          <div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">56+</div>
+            <div className="text-xl">Employees</div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT OUR CLIENTS SAY */}
+      <section className="max-w-[1400px] mx-auto px-6 mb-32">
+        <SectionTitle title="What Our Clients Say" />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <TestimonialCard image={imgClient1} name="Import Partner, UAE" />
+          <TestimonialCard image={imgClient2} name="Import Partner, UAE" />
+          <TestimonialCard image={imgClient3} name="Digital Partner, UAE" />
+          <TestimonialCard image={imgClient1} name="Export Partner, UAE" />
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <Footer />
+    </div>
+  );
+}
+
+// Subcomponents
+
+function FeatureItem({ title, desc }) {
+  return (
+    <div className="flex items-start gap-4">
+      <div className="w-[3px] bg-[#C8AD82] h-[50px] shrink-0 mt-1"></div>
+      <div>
+        <h3 className="text-2xl md:text-[30px] font-medium text-[#0F1B45] mb-2 leading-tight">
+          {title}
+        </h3>
+        <p className="text-[#0F1B45] font-light text-[15px] leading-[25px]">
+          {desc}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function ProcessStep({ title, desc, position }) {
+  const isTop = position === "top";
+
+  return (
+    <div className="lg:w-1/5 flex flex-col items-center relative group lg:h-full justify-center">
+      {/* Connector Line Vertical */}
+      <div
+        className={`hidden lg:block absolute w-[1px] bg-[#C8AD82] h-12 left-1/2 -translate-x-1/2 ${isTop ? "bottom-1/2" : "top-1/2"}`}
+      ></div>
+
+      {/* Point on the horizontal line */}
+      <div className="hidden lg:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-[#C8AD82] rounded-full z-20"></div>
+
+      {/* Content Box */}
+      <div
+        className={`bg-[#142359] border border-white/5 rounded-xl p-5 shadow-lg lg:absolute left-1/2 lg:-translate-x-1/2 w-full lg:w-[220px] transition-transform group-hover:-translate-y-1 ${isTop ? "lg:bottom-[calc(50%+48px)]" : "lg:top-[calc(50%+48px)]"}`}
+      >
+        <h4 className="text-lg font-medium text-[#C8AD82] mb-3">{title}</h4>
+        <p className="text-sm text-white/70 font-light leading-relaxed">
+          {desc}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function TestimonialCard({ image, name }) {
+  return (
+    <div className="bg-white rounded-[24px] p-8 shadow-sm border border-gray-100 flex flex-col justify-between h-full hover:shadow-md transition-shadow">
+      <div>
+        <div className="flex justify-between items-start mb-6">
+          <img
+            src={image}
+            alt={name}
+            className="w-16 h-16 rounded-full object-cover border-2 border-gray-100"
+          />
+          <div className="w-8 h-8 opacity-50">
+            <svg
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d={svgPaths.p1048ba80}
+                stroke="#C8AD82"
+                strokeWidth="2.67"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d={svgPaths.p2a7d500}
+                stroke="#C8AD82"
+                strokeWidth="2.67"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <p className="text-gray-600 italic font-light leading-relaxed mb-8 text-lg">
+          "Grow Xports provides reliable export support and consistent quality
+          making them a trusted partner for our business."
+        </p>
+      </div>
+      <div className="pt-6 border-t border-gray-100">
+        <p className="font-medium text-[#0F1B45]">{name}</p>
+      </div>
+    </div>
+  );
+}
