@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 import { SocialIcon } from "./SocialIcon";
 import imgLogo from "../../assets/logo.png";
+
 export function Footer() {
   return (
     <footer className="bg-[#002147] text-white pt-20 pb-8 px-6">
@@ -30,19 +31,20 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                to="/products"
+                className="hover:text-white transition-colors"
+              >
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-white transition-colors">
-                Export Process
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white transition-colors">
+              <Link
+                to="/contact"
+                className="hover:text-white transition-colors"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
