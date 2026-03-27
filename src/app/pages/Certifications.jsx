@@ -52,9 +52,9 @@ export default function Certifications() {
         <div className="mb-12">
           <SectionTitle title="World-Class Standards" />
           <p className="text-[#0F1B45] text-lg leading-relaxed max-w-5xl font-light mt-4">
-            Grow Xports follows international standards and holds certifications
-            that guarantee product quality, safety, and export compliance. We
-            believe in transparency as the cornerstone of global trade.
+            Grow Xports follows strict international standards to guarantee
+            product quality, food safety, and export compliance. We believe in
+            transparency as the cornerstone of our global trade operations.
           </p>
         </div>
 
@@ -62,14 +62,15 @@ export default function Certifications() {
           {/* Card 1 */}
           <div className="bg-white rounded-[40px] p-10 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 rounded-full bg-[#F3F4F5] flex items-center justify-center mb-6 text-[#0F1B45]">
-              <CheckCircle2 size={28} strokeWidth={1.5} />
+              <Utensils size={28} strokeWidth={1.5} />
             </div>
             <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
-              ISO 9001:2015
+              FSSAI Certified
             </h3>
             <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
-              International standard for quality management systems ensuring
-              consistent delivery of high-quality goods.
+              Full compliance with the Food Safety and Standards Authority of
+              India to ensure all our agricultural exports meet essential
+              national safety norms.
             </p>
             {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
               VIEW CERTIFICATE
@@ -79,14 +80,15 @@ export default function Certifications() {
           {/* Card 2 */}
           <div className="bg-white rounded-[40px] p-10 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
             <div className="w-16 h-16 rounded-full bg-[#F3F4F5] flex items-center justify-center mb-6 text-[#0F1B45]">
-              <Utensils size={28} strokeWidth={1.5} />
+              <CheckCircle2 size={28} strokeWidth={1.5} />
             </div>
             <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
-              FSSAI Certified
+              ISO 9001:2015
             </h3>
             <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
-              Compliance with the Food Safety and Standards Authority to ensure
-              all agricultural exports meet safety norms.
+              International standard for quality management systems, ensuring
+              the consistent delivery of high-quality goods across all our
+              operations.
             </p>
             {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
               VIEW CERTIFICATE
@@ -99,11 +101,12 @@ export default function Certifications() {
               <Globe size={28} strokeWidth={1.5} />
             </div>
             <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
-              APEDA Member
+              ISO 22000:2018
             </h3>
             <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
-              Official registration with the Agricultural and Processed Food
-              Products Export Development Authority.
+              A comprehensive global standard specifically designed to
+              guarantee food safety in processing, packaging, and international
+              export.
             </p>
             {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
               VIEW CERTIFICATE
@@ -116,11 +119,12 @@ export default function Certifications() {
               <FileText size={28} strokeWidth={1.5} />
             </div>
             <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
-              IEC Registration
+              HACCP Certified
             </h3>
             <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
-              Import Export Code issued by the DGFT, allowing us to legally
-              trade on an international scale.
+              Hazard Analysis Critical Control Point certification to identify,
+              evaluate, and prevent food safety hazards throughout our supply
+              chain.
             </p>
             {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
               VIEW CERTIFICATE
@@ -133,11 +137,12 @@ export default function Certifications() {
               <Leaf size={28} strokeWidth={1.5} />
             </div>
             <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
-              Organic Certified
+              HALAL Certified
             </h3>
             <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
-              Verification of organic cultivation processes for our specialty
-              sustainable product ranges.
+              Guarantees that our products and processing methods are strictly
+              compliant with Islamic dietary laws, ensuring suitability for our
+              GCC markets.
             </p>
             {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
               VIEW CERTIFICATE
@@ -150,11 +155,12 @@ export default function Certifications() {
               <ShieldCheck size={28} strokeWidth={1.5} />
             </div>
             <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
-              Quality Assurance
+              GMP Compliance
             </h3>
             <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
-              Proprietary internal standards and third-party laboratory
-              verification for all outgoing batches.
+              Adherence to Good Manufacturing Practices, ensuring strict
+              hygiene, proper production methods, and consistent product
+              quality control.
             </p>
             {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
               VIEW CERTIFICATE

@@ -2,12 +2,40 @@ import React from "react";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { SectionTitle } from "../components/SectionTitle";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "../components/ui/dialog";
 import handicraftsImage from "../../assets/handicrafts.webp";
 import { Link } from "react-router";
+
 const HERO_BG =
   "https://images.unsplash.com/photo-1735047974891-df59713d8192?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaGlwcGluZyUyMGNvbnRhaW5lcnMlMjBwb3J0JTIwY2FyZ298ZW58MXx8fHwxNzc0MzM0OTk1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 const AGRI_IMG =
   "https://images.unsplash.com/photo-1760726744076-625d550c51d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcGljZXMlMjBncmFpbnMlMjBzYWNrcyUyMG1hcmtldHxlbnwxfHx8fDE3NzQzMzUwMDN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
+
+const agriculturalItems = [
+  {
+    title: "Rice",
+    description:
+      "High-quality Indian rice varieties known for their taste, aroma, and nutritional value. Suitable for bulk export and international markets.",
+  },
+  {
+    title: "Spices",
+    description:
+      "Authentic Indian spices with rich flavor and aroma, sourced from trusted farms and processed with strict quality control.",
+  },
+  {
+    title: "Honey",
+    description:
+      "Pure and natural honey collected from certified sources, ensuring high nutritional value and quality for global consumers.",
+  },
+];
+
 export default function Products() {
   return (
     <div className="bg-[#F6F6F6] min-h-screen font-['Roboto',sans-serif] overflow-x-hidden flex flex-col">
@@ -52,30 +80,84 @@ export default function Products() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-[#F3F4F5] rounded-[48px] overflow-hidden shadow-sm flex flex-col group cursor-pointer hover:shadow-md transition-shadow">
-            <div className="w-full aspect-[4/3] relative">
-              <img
-                src={AGRI_IMG}
-                alt="Agricultural Products"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
-            <div className="p-10 flex flex-col flex-grow">
-              <h3 className="font-bold text-[#000A1E] text-2xl mb-3">
-                Agricultural Products
-              </h3>
-              <p className="text-[#44474E] text-base leading-relaxed mb-6 flex-grow">
-                Grains, spices, and fresh produce sourced directly from premium
-                farms.
-              </p>
-              {/* <div className="flex items-center gap-2 mt-auto">
-                <span className="font-bold text-[#735C00] text-sm tracking-[1.4px] uppercase">View More</span>
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 0L4.9425 1.0575L9.1275 5.25H0V6.75H9.1275L4.9425 10.9425L6 12L12 6L6 0Z" fill="#735C00"/>
-                </svg>
-              </div> */}
-            </div>
-          </div>
+          <Dialog>
+            <DialogTrigger asChild>
+              <button
+                type="button"
+                className="bg-[#F3F4F5] rounded-[48px] overflow-hidden shadow-sm flex flex-col group cursor-pointer hover:shadow-md transition-shadow text-left"
+              >
+                <div className="w-full aspect-[4/3] relative">
+                  <img
+                    src={AGRI_IMG}
+                    alt="Agricultural Products"
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-10 flex flex-col flex-grow">
+                  <h3 className="font-bold text-[#000A1E] text-2xl mb-3">
+                    Agricultural Products
+                  </h3>
+                  <p className="text-[#44474E] text-base leading-relaxed mb-6 flex-grow">
+                    Grains, spices, and fresh produce sourced directly from
+                    premium farms.
+                  </p>
+                  <div className="flex items-center gap-2 mt-auto">
+                    <span className="font-bold text-[#735C00] text-sm tracking-[1.4px] uppercase">
+                      View More
+                    </span>
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 0L4.9425 1.0575L9.1275 5.25H0V6.75H9.1275L4.9425 10.9425L6 12L12 6L6 0Z"
+                        fill="#735C00"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
+            </DialogTrigger>
+
+            <DialogContent className="w-[min(96vw,1400px)] md:min-w-[760px] xl:min-w-[1240px] max-h-[85dvh] overflow-y-auto border-0 bg-[#F6F6F6] rounded-[36px] p-6 md:p-10">
+              <DialogHeader className="mb-2 text-left">
+                <DialogTitle className="text-3xl md:text-4xl text-[#000A1E]">
+                  Agricultural Products
+                </DialogTitle>
+                <DialogDescription className="text-[#44474E] text-base md:text-lg leading-relaxed max-w-3xl">
+                  Explore our agricultural export range with carefully selected
+                  products prepared for international markets.
+                </DialogDescription>
+              </DialogHeader>
+
+              <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6">
+                {agriculturalItems.map((item) => (
+                  <div
+                    key={item.title}
+                    className="min-w-0 bg-white rounded-[32px] overflow-hidden shadow-sm border border-[#E7E1D7] flex flex-col"
+                  >
+                    <div className="aspect-[4/3] bg-gradient-to-br from-[#EBE1D3] via-[#F3F4F5] to-[#D8E1EB] flex items-center justify-center">
+                      <div className="border border-dashed border-[#B0833B]/50 text-[#735C00] rounded-full px-5 py-2 text-xs font-semibold tracking-[1.8px] uppercase">
+                        Image Placeholder
+                      </div>
+                    </div>
+
+                    <div className="p-8 flex flex-col flex-grow">
+                      <h3 className="text-2xl font-bold text-[#000A1E] mb-3">
+                        {item.title}
+                      </h3>
+                      <p className="text-[#44474E] text-base leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </DialogContent>
+          </Dialog>
 
           {/* Card 2 */}
           <div className="bg-[#F3F4F5] rounded-[48px] overflow-hidden shadow-sm flex flex-col group cursor-pointer hover:shadow-md transition-shadow">
