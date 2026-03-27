@@ -11,6 +11,9 @@ import {
   DialogTrigger,
 } from "../components/ui/dialog";
 import handicraftsImage from "../../assets/handicrafts.webp";
+import honeyImage from "../../assets/honey.webp";
+import riceSubImage from "../../assets/rice-sub.webp";
+import spicesImage from "../../assets/spices.webp";
 import { Link } from "react-router";
 
 const HERO_BG =
@@ -21,16 +24,19 @@ const AGRI_IMG =
 const agriculturalItems = [
   {
     title: "Rice",
+    image: riceSubImage,
     description:
       "High-quality Indian rice varieties known for their taste, aroma, and nutritional value. Suitable for bulk export and international markets.",
   },
   {
     title: "Spices",
+    image: spicesImage,
     description:
       "Authentic Indian spices with rich flavor and aroma, sourced from trusted farms and processed with strict quality control.",
   },
   {
     title: "Honey",
+    image: honeyImage,
     description:
       "Pure and natural honey collected from certified sources, ensuring high nutritional value and quality for global consumers.",
   },
@@ -139,10 +145,12 @@ export default function Products() {
                     key={item.title}
                     className="min-w-0 bg-white rounded-[32px] overflow-hidden shadow-sm border border-[#E7E1D7] flex flex-col"
                   >
-                    <div className="aspect-[4/3] bg-gradient-to-br from-[#EBE1D3] via-[#F3F4F5] to-[#D8E1EB] flex items-center justify-center">
-                      <div className="border border-dashed border-[#B0833B]/50 text-[#735C00] rounded-full px-5 py-2 text-xs font-semibold tracking-[1.8px] uppercase">
-                        Image Placeholder
-                      </div>
+                    <div className="aspect-[4/3] relative">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
                     </div>
 
                     <div className="p-8 flex flex-col flex-grow">
