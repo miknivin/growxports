@@ -4,7 +4,7 @@ import { SectionTitle } from "../components/SectionTitle";
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 import { WorldReachMap } from "../components/WorldReachMap";
-
+import spicesImage from "../../assets/spices.webp";
 // Assets
 import imgEllipse1 from "../../assets/imgEllipse1.png";
 import imgEllipse2 from "../../assets/imgEllipse2.png";
@@ -14,7 +14,18 @@ import imgClient2 from "../../assets/testimonial-2.png";
 import imgClient3 from "../../assets/testimonial-3.png";
 import bannerVideo from "../../assets/video/banner.mp4";
 import svgPaths from "../../imports/svg-pj4gezvnd5";
-
+import honeyImage from "../../assets/honey.webp";
+import {
+  CheckCircle2,
+  Utensils,
+  Globe,
+  FileText,
+  Leaf,
+  ShieldCheck,
+  Shield,
+  Award,
+} from "lucide-react";
+import { Link } from "react-router";
 export default function Home() {
   return (
     <div className="bg-[#F6F6F6] min-h-screen font-['Roboto',sans-serif] overflow-x-hidden">
@@ -41,9 +52,9 @@ export default function Home() {
               FOR DUBAI AND THE GCC
             </h1>
             <p className="text-lg md:text-xl text-white/95 mb-10 max-w-3xl leading-relaxed font-light">
-              Grow Xports brings high-quality Indian rice, grains, and spices to
-              international markets with a strong focus on Dubai. Under our
-              brand Soil & Soul, we are committed to delivering purity,
+              Grow Xports brings high-quality Indian rice, spices, and honey to
+              international markets with a strong current focus on Dubai. Under
+              our brand Soil & Soul, we are committed to delivering purity,
               consistency, and value at the right price.
             </p>
             <div className="flex flex-wrap gap-4 items-center mb-16">
@@ -68,9 +79,9 @@ export default function Home() {
         <SectionTitle title="Why Choose Grow Xports" />
         <p className="text-lg md:text-xl text-[#0F1B45] font-light max-w-5xl mb-16 leading-relaxed">
           Grow Xports is an Indian export company focused exclusively on
-          agricultural products for overseas markets. We currently export rice,
-          grains, and spices, with a clear goal to build a trusted distribution
-          presence in Dubai and expand across the GCC.
+          agricultural products for overseas markets.We currently export rice,
+          spices, and honey, with a clear goal to build a trusted international
+          distribution presence and expand into global markets.
           <br />
           <br />
           Our approach is simple: source quality products, maintain reliable
@@ -90,11 +101,11 @@ export default function Home() {
           />
           <FeatureItem
             title="Focused Product Range"
-            desc="By specializing only in rice, grains, and spices, we give full attention to the categories we know best."
+            desc="By specializing only in rice, spices, and honey, we give full attention to the categories we know best."
           />
           <FeatureItem
-            title="Dubai Market Vision"
-            desc="Grow Xports works with international buyers across multiple regions, ensuring reliable trade relationships and professional export services."
+            title="Global Market Vision"
+            desc="We are building toward a strong international presence, starting with Dubai and expanding worldwide."
           />
           <FeatureItem
             title="Trusted Brand Promise"
@@ -120,9 +131,9 @@ export default function Home() {
           {/* Card Background */}
           <div className="w-full max-w-[1200px] relative">
             {/* Giant watermark */}
-            <div className="absolute top-8 left-[35%] text-[#C8AD82] text-7xl md:text-[100px] font-semibold opacity-30 z-0 select-none">
+            {/* <div className="absolute top-8 left-[35%] text-[#C8AD82] text-7xl md:text-[100px] font-semibold opacity-30 z-0 select-none">
               02
-            </div>
+            </div> */}
 
             <div className="relative z-10 bg-white rounded-[30px] p-4 md:p-8 flex flex-col md:flex-row items-center gap-10 shadow-sm border border-gray-100">
               <div className="w-full md:w-1/2">
@@ -142,9 +153,57 @@ export default function Home() {
                   rice, known for their quality, consistency, and proper
                   processing.
                 </p>
-                <button className="bg-[#C8AD82] text-white px-8 py-3 rounded-[30px] font-medium text-lg hover:bg-opacity-90 transition-transform hover:scale-105 inline-block">
+                {/* <button className="bg-[#C8AD82] text-white px-8 py-3 rounded-[30px] font-medium text-lg hover:bg-opacity-90 transition-transform hover:scale-105 inline-block">
                   View more
-                </button>
+                </button> */}
+              </div>
+            </div>
+            <div className="relative z-10 bg-white rounded-[30px] p-4 md:p-8 flex flex-col md:flex-row items-center gap-10 shadow-sm border border-gray-100">
+              <div className="w-full md:w-1/2">
+                <img
+                  src={spicesImage}
+                  alt="Rice and Grains"
+                  className="w-full rounded-[20px] object-cover h-[300px] md:h-[400px]"
+                />
+              </div>
+              <div className="w-full md:w-1/2 md:pr-10 py-6">
+                <h3 className="text-3xl font-medium text-[#0F1B45] mb-6">
+                  Indian Spices
+                </h3>
+                <p className="text-gray-600 text-lg font-light leading-relaxed mb-8">
+                  Our spice range is built around purity, natural aroma, and
+                  authentic Indian character. We currently focus on premium
+                  Cardamom and Black Pepper, both selected for their richness
+                  and freshness, and supplied to meet the expectations of
+                  international buyers.
+                </p>
+                {/* <button className="bg-[#C8AD82] text-white px-8 py-3 rounded-[30px] font-medium text-lg hover:bg-opacity-90 transition-transform hover:scale-105 inline-block">
+                  View more
+                </button> */}
+              </div>
+            </div>
+            <div className="relative z-10 bg-white rounded-[30px] p-4 md:p-8 flex flex-col md:flex-row items-center gap-10 shadow-sm border border-gray-100">
+              <div className="w-full md:w-1/2">
+                <img
+                  src={honeyImage}
+                  alt="Rice and Grains"
+                  className="w-full rounded-[20px] object-cover h-[300px] md:h-[400px]"
+                />
+              </div>
+              <div className="w-full md:w-1/2 md:pr-10 py-6">
+                <h3 className="text-3xl font-medium text-[#0F1B45] mb-6">
+                  Honey
+                </h3>
+                <p className="text-gray-600 text-lg font-light leading-relaxed mb-8">
+                  We export high-quality, natural Indian honey. Pure,
+                  unprocessed, and sourced from verified apiaries. Rich in taste
+                  and free from artificial additives, our honey reflects the
+                  same uncompromising quality standard that defines every Soil &
+                  Soul product.
+                </p>
+                {/* <button className="bg-[#C8AD82] text-white px-8 py-3 rounded-[30px] font-medium text-lg hover:bg-opacity-90 transition-transform hover:scale-105 inline-block">
+                  View more
+                </button> */}
               </div>
             </div>
           </div>
@@ -190,6 +249,125 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="max-w-[1280px] mx-auto px-6 mb-24 w-full">
+        <div className="mb-12">
+          <SectionTitle title="World-Class Standards (Certifications)" />
+          <p className="text-[#0F1B45] text-lg leading-relaxed max-w-5xl font-light mt-4">
+            Grow Xports follows strict international standards to guarantee
+            product quality, food safety, and export compliance. We believe in
+            transparency as the cornerstone of our global trade operations.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Card 1 */}
+          <div className="bg-white rounded-[40px] p-10 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 rounded-full bg-[#F3F4F5] flex items-center justify-center mb-6 text-[#0F1B45]">
+              <Utensils size={28} strokeWidth={1.5} />
+            </div>
+            <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
+              FSSAI Certified
+            </h3>
+            <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
+              Full compliance with the Food Safety and Standards Authority of
+              India to ensure all our agricultural exports meet essential
+              national safety norms.
+            </p>
+            {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
+              VIEW CERTIFICATE
+            </button> */}
+          </div>
+
+          {/* Card 2 */}
+          <div className="bg-white rounded-[40px] p-10 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 rounded-full bg-[#F3F4F5] flex items-center justify-center mb-6 text-[#0F1B45]">
+              <CheckCircle2 size={28} strokeWidth={1.5} />
+            </div>
+            <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
+              ISO 9001:2015
+            </h3>
+            <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
+              International standard for quality management systems, ensuring
+              the consistent delivery of high-quality goods across all our
+              operations.
+            </p>
+            {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
+              VIEW CERTIFICATE
+            </button> */}
+          </div>
+
+          {/* Card 3 */}
+          <div className="bg-white rounded-[40px] p-10 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 rounded-full bg-[#F3F4F5] flex items-center justify-center mb-6 text-[#0F1B45]">
+              <Globe size={28} strokeWidth={1.5} />
+            </div>
+            <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
+              ISO 22000:2018
+            </h3>
+            <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
+              A comprehensive global standard specifically designed to guarantee
+              food safety in processing, packaging, and international export.
+            </p>
+            {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
+              VIEW CERTIFICATE
+            </button> */}
+          </div>
+
+          {/* Card 4 */}
+          <div className="bg-white rounded-[40px] p-10 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 rounded-full bg-[#F3F4F5] flex items-center justify-center mb-6 text-[#0F1B45]">
+              <FileText size={28} strokeWidth={1.5} />
+            </div>
+            <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
+              HACCP Certified
+            </h3>
+            <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
+              Hazard Analysis Critical Control Point certification to identify,
+              evaluate, and prevent food safety hazards throughout our supply
+              chain.
+            </p>
+            {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
+              VIEW CERTIFICATE
+            </button> */}
+          </div>
+
+          {/* Card 5 */}
+          <div className="bg-white rounded-[40px] p-10 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 rounded-full bg-[#F3F4F5] flex items-center justify-center mb-6 text-[#0F1B45]">
+              <Leaf size={28} strokeWidth={1.5} />
+            </div>
+            <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
+              HALAL Certified
+            </h3>
+            <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
+              Guarantees that our products and processing methods are strictly
+              compliant with Islamic dietary laws, ensuring suitability for our
+              GCC markets.
+            </p>
+            {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
+              VIEW CERTIFICATE
+            </button> */}
+          </div>
+
+          {/* Card 6 */}
+          <div className="bg-white rounded-[40px] p-10 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div className="w-16 h-16 rounded-full bg-[#F3F4F5] flex items-center justify-center mb-6 text-[#0F1B45]">
+              <ShieldCheck size={28} strokeWidth={1.5} />
+            </div>
+            <h3 className="font-bold text-[#0F1B45] text-xl mb-4">
+              GMP Compliance
+            </h3>
+            <p className="text-[#44474E] text-[15px] leading-relaxed mb-8 flex-grow font-light">
+              Adherence to Good Manufacturing Practices, ensuring strict
+              hygiene, proper production methods, and consistent product quality
+              control.
+            </p>
+            {/* <button className="font-bold text-[#735C00] text-xs tracking-[1.5px] uppercase mt-auto">
+              VIEW CERTIFICATE
+            </button> */}
+          </div>
+        </div>
+      </section>
       {/* EXPORT PROCESS */}
       <section className="bg-[#0F1B45] py-24 px-6 text-white mb-24 overflow-hidden">
         <div className="max-w-[1200px] mx-auto">
