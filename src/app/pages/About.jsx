@@ -166,33 +166,28 @@ export default function About() {
       <section className="max-w-[1200px] mx-auto px-6 mb-32 relative">
         <SectionTitle title="Our Global Reach" />
         <p className="text-lg md:text-xl text-[#0F1B45] font-light max-w-4xl mb-16 leading-relaxed">
-          Grow Xports supplies products to international markets across multiple
-          regions including the Middle East, Europe, Africa, and Southeast Asia.
-          <br />
-          Our strong logistics network ensures efficient delivery and reliable
-          partnerships with global buyers.
+          Grow Xports is bridging the gap between Indian farms and worldwide
+          markets, delivering premium agricultural products across the globe.
         </p>
 
         <WorldReachMap className="w-full max-w-[980px] mx-auto mb-16" />
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-[#0F1B45] mb-24">
           <div>
-            <div className="text-5xl md:text-[70px] font-medium mb-4">10+</div>
-            <div className="text-xl">Years Experience</div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">2019</div>
+            <div className="text-xl">Year Established</div>
           </div>
           <div>
-            <div className="text-5xl md:text-[70px] font-medium mb-4">250+</div>
-            <div className="text-xl">Products</div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">3</div>
+            <div className="text-xl">Core Categories</div>
           </div>
           <div>
-            <div className="text-5xl md:text-[70px] font-medium mb-4">
-              10000+
-            </div>
-            <div className="text-xl">Customers</div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">100%</div>
+            <div className="text-xl">Quality Focus</div>
           </div>
           <div>
-            <div className="text-5xl md:text-[70px] font-medium mb-4">56+</div>
-            <div className="text-xl">Employees</div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">1</div>
+            <div className="text-xl">Global Hub (Dubai)</div>
           </div>
         </div>
 

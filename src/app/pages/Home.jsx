@@ -8,7 +8,7 @@ import spicesImage from "../../assets/spices.webp";
 // Assets
 import imgEllipse1 from "../../assets/imgEllipse1.png";
 import imgEllipse2 from "../../assets/imgEllipse2.png";
-import imgRice from "../../assets/rice.png";
+import imgRice from "../../assets/rice.webp";
 import imgClient1 from "../../assets/testimonial-1.png";
 import imgClient2 from "../../assets/testimonial-2.png";
 import imgClient3 from "../../assets/testimonial-3.png";
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
               <div className="w-full md:w-1/2 md:pr-10 py-6">
                 <h3 className="text-3xl font-medium text-[#0F1B45] mb-6">
-                  Rice and Grains
+                  Rice
                 </h3>
                 <p className="text-gray-600 text-lg font-light leading-relaxed mb-8">
                   Our rice products are a staple in markets across the Middle
@@ -423,31 +423,28 @@ export default function Home() {
       <section className="max-w-[1200px] mx-auto px-6 mb-32 relative">
         <SectionTitle title="Our Global Reach" />
         <p className="text-lg md:text-xl text-[#0F1B45] font-light max-w-4xl mb-16 leading-relaxed text-center mx-auto">
-          Grow Xports is bridging the gap between Indian farms and the Middle
-          Eastern market, with a primary focus on establishing a strong foothold
-          in the UAE.
+          Grow Xports is bridging the gap between Indian farms and worldwide
+          markets, delivering premium agricultural products across the globe.
         </p>
 
         <WorldReachMap />
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-[#0F1B45]">
           <div>
-            <div className="text-5xl md:text-[70px] font-medium mb-4">10+</div>
-            <div className="text-xl">Years Experience</div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">2019</div>
+            <div className="text-xl">Year Established</div>
           </div>
           <div>
-            <div className="text-5xl md:text-[70px] font-medium mb-4">250+</div>
-            <div className="text-xl">Products</div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">3</div>
+            <div className="text-xl">Core Categories</div>
           </div>
           <div>
-            <div className="text-5xl md:text-[70px] font-medium mb-4">
-              10000+
-            </div>
-            <div className="text-xl">Customers</div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">100%</div>
+            <div className="text-xl">Quality Focus</div>
           </div>
           <div>
-            <div className="text-5xl md:text-[70px] font-medium mb-4">56+</div>
-            <div className="text-xl">Employees</div>
+            <div className="text-5xl md:text-[70px] font-medium mb-4">1</div>
+            <div className="text-xl">Global Hub (Dubai)</div>
           </div>
         </div>
       </section>
