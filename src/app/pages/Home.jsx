@@ -79,7 +79,7 @@ export default function Home() {
         <SectionTitle title="Why Choose Grow Xports" />
         <p className="text-lg md:text-xl text-[#0F1B45] font-light max-w-5xl mb-16 leading-relaxed">
           Grow Xports is an Indian export company focused exclusively on
-          agricultural products for overseas markets.We currently export rice,
+          agricultural products for overseas markets. We currently export rice,
           spices, and honey, with a clear goal to build a trusted international
           distribution presence and expand into global markets.
           <br />
