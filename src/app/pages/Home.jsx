@@ -148,10 +148,11 @@ export default function Home() {
                   Rice
                 </h3>
                 <p className="text-gray-600 text-lg font-light leading-relaxed mb-8">
-                  Our rice products are a staple in markets across the Middle
-                  East. We provide selected varieties of Basmati and Non-Basmati
-                  rice, known for their quality, consistency, and proper
-                  processing.
+                  We offer a premium selection of Indian rice varieties, sourced
+                  from trusted farms and carefully processed to meet
+                  international quality standards. Our rice is selected for its
+                  consistency, taste, and export readiness, making it ideal for
+                  distributors, wholesalers, and buyers across global markets
                 </p>
                 {/* <button className="bg-[#C8AD82] text-white px-8 py-3 rounded-[30px] font-medium text-lg hover:bg-opacity-90 transition-transform hover:scale-105 inline-block">
                   View more
