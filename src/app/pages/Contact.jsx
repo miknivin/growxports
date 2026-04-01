@@ -47,7 +47,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-[#888888] font-bold text-xs tracking-[1.5px] uppercase mb-1">PHONE SUPPORT</p>
-                  <p className="text-[#000A1E] font-bold text-xl">+91 XXXXX XXXXX</p>
+                  <p className="text-[#000A1E] font-bold text-xl">+91 90611 89999</p>
                 </div>
               </div>
 
@@ -58,7 +58,17 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-[#888888] font-bold text-xs tracking-[1.5px] uppercase mb-1">HEADQUARTERS</p>
-                  <p className="text-[#000A1E] font-bold text-xl">New Delhi, India</p>
+                  <p className="text-[#000A1E] font-bold text-xl leading-relaxed">
+                    Grow Xports
+                    <br />
+                    Palakkad
+                    <br />
+                    Kerala
+                    <br />
+                    India
+                    <br />
+                    679336
+                  </p>
                 </div>
               </div>
             </div>

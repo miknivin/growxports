@@ -49,7 +49,7 @@ export default function Home() {
             <h1 className="text-3xl md:text-6xl lg:text-6xl font-medium text-white mb-6 leading-[1.1]">
               PREMIUM INDIAN EXPORTS
               <br />
-              FOR DUBAI AND THE GCC
+              FOR WORLDWIDE MARKETS
             </h1>
             <p className="text-lg md:text-xl text-white/95 mb-10 max-w-3xl leading-relaxed font-light">
               Grow Xports brings high-quality Indian rice, spices, and honey to
@@ -66,11 +66,11 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="hidden md:flex gap-4 absolute bottom-10 right-6">
+          {/* <div className="hidden md:flex gap-4 absolute bottom-10 right-6">
             <SocialIcon type="twitter" variant="light" />
             <SocialIcon type="instagram" variant="light" />
             <SocialIcon type="facebook" variant="light" />
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -225,9 +225,8 @@ export default function Home() {
               Our Mission
             </h3>
             <p className="text-xl text-[#0F1B45] font-light leading-relaxed">
-              To deliver the best quality Indian products to Dubai at the best
-              affordable price, while building a business rooted in fairness and
-              trust.
+              To deliver the best quality Indian products at the best affordable
+              price, while building a business rooted in fairness and trust.
             </p>
           </div>
           <div className="bg-[#E6E6E6] rounded-[30px] p-10 pt-16 relative">
@@ -242,8 +241,8 @@ export default function Home() {
               Our Vision
             </h3>
             <p className="text-xl text-[#0F1B45] font-light leading-relaxed">
-              To establish a strong distribution network in Dubai and expand
-              from there to the wider GCC market.
+              To build a strong distribution network and grow into a trusted
+              export brand serving markets worldwide.
             </p>
           </div>
         </div>

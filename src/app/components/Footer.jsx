@@ -93,14 +93,19 @@ export function Footer() {
           </h4>
           <ul className="space-y-4 text-white/75 text-lg mb-8 font-['Roboto'] font-light">
             <li>info@growxports.com</li>
-            <li>+91 XXXXX XXXXX</li>
-            <li>India</li>
+            <li>+91 90611 89999</li>
+            <li className="leading-relaxed">
+              Grow Xports
+              <br />
+              Palakkad, Kerala, India,
+              <br /> 679336
+            </li>
           </ul>
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
             <SocialIcon type="instagram" variant="gold" />
             <SocialIcon type="facebook" variant="gold" />
             <SocialIcon type="twitter" variant="gold" />
-          </div>
+          </div> */}
         </div>
       </div>
 
