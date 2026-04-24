@@ -6,14 +6,13 @@ import { WorldReachMap } from "../components/WorldReachMap";
 // Assets
 import imgEllipse1 from "../../assets/imgEllipse1.png";
 import imgEllipse2 from "../../assets/imgEllipse2.png";
+import PORTRAIT_IMG from "../../assets/founder.jpeg";
 import { Link } from "react-router";
 // Unsplash images
 const HERO_BG =
   "https://images.unsplash.com/photo-1761538367870-67ced125b850?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMHNoaXAlMjBjaXR5JTIwc2t5bGluZSUyMHJpdmVyfGVufDF8fHx8MTc3NDMzNDc5Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 const CRANE_IMG =
   "https://images.unsplash.com/photo-1601311852860-1d8f42381551?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMGNyYW5lcyUyMGNvbnRhaW5lciUyMHNoaXAlMjBwb3J0fGVufDF8fHx8MTc3NDMzNDgwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
-const PORTRAIT_IMG =
-  "https://images.unsplash.com/photo-1768565422698-2faaefa61fcc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdCUyMG1pZGRsZSUyMGVhc3Rlcm58ZW58MXx8fHwxNzc0MzM0ODA0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral";
 export default function About() {
   return (
     <div className="bg-[#F6F6F6] min-h-screen font-['Roboto',sans-serif] overflow-x-hidden">

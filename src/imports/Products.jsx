@@ -276,7 +276,7 @@ function Group8() {
         className="absolute font-['Roboto:Regular',sans-serif] font-normal leading-[45px] left-[calc(90%-169.8px)] text-[20px] text-[rgba(255,255,255,0.75)] top-[2295px] w-[222px] whitespace-pre-wrap"
         style={{ fontVariationSettings: "'wdth' 100" }}
       >
-        info@growxports.com
+        Info@growxports.in
         <br aria-hidden="true" />
         {` +91 XXXXX XXXXX`}
         <br aria-hidden="true" />

@@ -92,7 +92,7 @@ export function Footer() {
             Contact Info
           </h4>
           <ul className="space-y-4 text-white/75 text-lg mb-8 font-['Roboto'] font-light">
-            <li>info@growxports.com</li>
+            <li>Info@growxports.in</li>
             <li>+91 90611 89999</li>
             <li className="leading-relaxed">
               Grow Xports

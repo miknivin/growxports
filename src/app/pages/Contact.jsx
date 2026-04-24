@@ -40,7 +40,7 @@ export default function Contact() {
                     EMAIL INQUIRY
                   </p>
                   <p className="text-[#000A1E] font-bold text-xl">
-                    info@growxports.com
+                    Info@growxports.in
                   </p>
                 </div>
               </div>
