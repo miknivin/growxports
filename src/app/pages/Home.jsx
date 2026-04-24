@@ -9,9 +9,6 @@ import spicesImage from "../../assets/spices.webp";
 import imgEllipse1 from "../../assets/imgEllipse1.png";
 import imgEllipse2 from "../../assets/imgEllipse2.png";
 import imgRice from "../../assets/rice.webp";
-import imgClient1 from "../../assets/testimonial-1.png";
-import imgClient2 from "../../assets/testimonial-2.png";
-import imgClient3 from "../../assets/testimonial-3.png";
 import bannerVideo from "../../assets/video/banner.mp4";
 import svgPaths from "../../imports/svg-pj4gezvnd5";
 import honeyImage from "../../assets/honey.webp";
@@ -455,10 +452,22 @@ export default function Home() {
         <SectionTitle title="What Our Clients Say" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          <TestimonialCard image={imgClient1} name="Import Partner, UAE" />
-          <TestimonialCard image={imgClient2} name="Import Partner, UAE" />
-          <TestimonialCard image={imgClient3} name="Digital Partner, UAE" />
-          <TestimonialCard image={imgClient1} name="Export Partner, UAE" />
+          <TestimonialCard 
+            review="The quality of rice and spices we receive from Grow Xports is exceptional. Their consistency and commitment to delivery timelines make them a highly reliable partner." 
+            name="Wholesale Distributor, UAE" 
+          />
+          <TestimonialCard 
+            review="Working with Grow Xports has been a seamless experience. They handle all documentation perfectly, and their premium products always meet our stringent market standards." 
+            name="Retail Chain Owner, Saudi Arabia" 
+          />
+          <TestimonialCard 
+            review="We highly appreciate the transparency and professionalism of the Grow Xports team. Their natural honey and spices have received great feedback from our retail customers." 
+            name="Import Partner, Oman" 
+          />
+          <TestimonialCard 
+            review="A trustworthy export partner that never compromises on quality. From sourcing to packaging and final delivery, their entire process is incredibly well managed." 
+            name="Food Service Provider, Qatar" 
+          />
         </div>
       </section>
 
@@ -512,16 +521,11 @@ function ProcessStep({ title, desc, position }) {
   );
 }
 
-function TestimonialCard({ image, name }) {
+function TestimonialCard({ review, name }) {
   return (
     <div className="bg-white rounded-[24px] p-8 shadow-sm border border-gray-100 flex flex-col justify-between h-full hover:shadow-md transition-shadow">
       <div>
-        <div className="flex justify-between items-start mb-6">
-          <img
-            src={image}
-            alt={name}
-            className="w-16 h-16 rounded-full object-cover border-2 border-gray-100"
-          />
+        <div className="flex justify-start items-start mb-6">
           <div className="w-8 h-8 opacity-50">
             <svg
               viewBox="0 0 32 32"
@@ -546,8 +550,7 @@ function TestimonialCard({ image, name }) {
           </div>
         </div>
         <p className="text-gray-600 italic font-light leading-relaxed mb-8 text-lg">
-          "Grow Xports provides reliable export support and consistent quality
-          making them a trusted partner for our business."
+          "{review}"
         </p>
       </div>
       <div className="pt-6 border-t border-gray-100">
