@@ -49,10 +49,7 @@ export default function Home() {
               FOR WORLDWIDE MARKETS
             </h1>
             <p className="text-lg md:text-xl text-white/95 mb-10 max-w-3xl leading-relaxed font-light">
-              Grow Xports brings high-quality Indian rice, spices, and honey to
-              international markets with a strong current focus on Dubai. Under
-              our brand Soil & Soul, we are committed to delivering purity,
-              consistency, and value at the right price.
+              Grow Xports brings high-quality Indian rice, spices, and honey to international markets under our brand Soil & Soul. We are committed to delivering purity, consistency, and value at the right price
             </p>
             <div className="flex flex-wrap gap-4 items-center mb-16">
               <button className="bg-[#0F1B45] text-white px-10 py-4 rounded-[30px] font-medium text-xl hover:bg-opacity-90 transition-colors shadow-lg">
@@ -452,21 +449,21 @@ export default function Home() {
         <SectionTitle title="What Our Clients Say" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          <TestimonialCard 
-            review="The quality of rice and spices we receive from Grow Xports is exceptional. Their consistency and commitment to delivery timelines make them a highly reliable partner." 
-            name="Wholesale Distributor, UAE" 
+          <TestimonialCard
+            review="The quality of rice and spices we receive from Grow Xports is exceptional. Their consistency and commitment to delivery timelines make them a highly reliable partner."
+            name="Wholesale Distributor, UAE"
           />
-          <TestimonialCard 
-            review="Working with Grow Xports has been a seamless experience. They handle all documentation perfectly, and their premium products always meet our stringent market standards." 
-            name="Retail Chain Owner, Saudi Arabia" 
+          <TestimonialCard
+            review="Working with Grow Xports has been a seamless experience. They handle all documentation perfectly, and their premium products always meet our stringent market standards."
+            name="Retail Chain Owner, Saudi Arabia"
           />
-          <TestimonialCard 
-            review="We highly appreciate the transparency and professionalism of the Grow Xports team. Their natural honey and spices have received great feedback from our retail customers." 
-            name="Import Partner, Oman" 
+          <TestimonialCard
+            review="We highly appreciate the transparency and professionalism of the Grow Xports team. Their natural honey and spices have received great feedback from our retail customers."
+            name="Import Partner, Oman"
           />
-          <TestimonialCard 
-            review="A trustworthy export partner that never compromises on quality. From sourcing to packaging and final delivery, their entire process is incredibly well managed." 
-            name="Food Service Provider, Qatar" 
+          <TestimonialCard
+            review="A trustworthy export partner that never compromises on quality. From sourcing to packaging and final delivery, their entire process is incredibly well managed."
+            name="Food Service Provider, Qatar"
           />
         </div>
       </section>
